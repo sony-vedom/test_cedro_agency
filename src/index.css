@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  margin: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 10px;
+    position: absolute;
+    background: rgba(145, 147, 153, 0.48);
+    border-radius: 0.75rem;
+    background-clip: content-box;
+    border: 0.15625em solid transparent;
+}
+
+img, video {
+    max-width: unset;
 }

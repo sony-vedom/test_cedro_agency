@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content : [ "./index.html" , "./src/**/*.{js,jsx,ts,tsx}" ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        'pre-xl': '0 16px 64px -4px rgba(22, 8, 30, 0.08)'
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
-
